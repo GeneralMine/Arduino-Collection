@@ -1,0 +1,4 @@
+class AnalogSensor : Basisklasse
+{
+  
+}
