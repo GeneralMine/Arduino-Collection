@@ -1,0 +1,21 @@
+class Fahrzeug
+{
+  
+  Fahrzeug()  {
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+};
