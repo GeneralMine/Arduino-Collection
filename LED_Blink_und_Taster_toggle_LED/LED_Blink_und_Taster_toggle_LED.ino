@@ -24,6 +24,13 @@ void setup()   // die "setup" Funktion muss einmal in jedem Programm stehen und 
 // eine sogenannte Endlos-Schleife:
 void loop()
 {
+  // Blink-LED über Intervallsteuerung blinken lassen
+  if((millis() - alteZeit) > interval)
+  {
+    alteZeit = millis();
+    ledStatusBlink = !ledStatusBlink;           // Toggeln ledStatus, "!" invertiert, LOW --> HIGH; HIGH --> LOW
+    digitalWrite(ledPinBlink, ledStatusBlink);  // LED je nach ledStatus ein- od. ausschalten, d.h. "Toggeln" LED 
+  } // if 
   
   // Taster Status abfragen
   tasterStatus = digitalRead(tasterPin);    // Fkt. liest den Zustand des digitalen Pins ein

@@ -32,7 +32,7 @@ void loop(){
     digitalWrite(13,timeStatus() == timeSet); // on if synced, off if needs refresh  
     digitalClockDisplay();  
   }
-  delay(500);
+  delay(5000);
 }
 
 void digitalClockDisplay(){
